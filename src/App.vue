@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import HelloWorld from './components/HelloWorld.vue'
 import UserList from './components/UserList.vue';
-var userInfoes = {{name = "a", age= 10, desc = "testdesc"}}
+var userInfoes = [{ name: "a", age: 10, desc: "testdesc" }]
 </script>
 
 <template>
@@ -14,7 +14,7 @@ var userInfoes = {{name = "a", age= 10, desc = "testdesc"}}
     </a>
   </div>
   <HelloWorld msg="Vite + Vue" />
-  <UserList userInfoes="{userInfoes}"/>
+  <UserList :userInfoes="userInfoes" />
 </template>
 
 <style scoped>
@@ -24,9 +24,11 @@ var userInfoes = {{name = "a", age= 10, desc = "testdesc"}}
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
 .logo.vue:hover {
   filter: drop-shadow(0 0 2em #42b883aa);
 }

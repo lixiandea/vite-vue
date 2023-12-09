@@ -1,5 +1,5 @@
 <script setup lang="ts">
-defineProps<{ name:string, age: number, desc:string }>()
+defineProps<{ name: string, age: number, desc?: string }>()
 </script>
 
 <template>
@@ -10,6 +10,4 @@ defineProps<{ name:string, age: number, desc:string }>()
     </div>
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>

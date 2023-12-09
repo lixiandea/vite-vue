@@ -1,10 +1,13 @@
 <script setup lang="ts">
-    import {ListItem} from "@/components/ListItem.vue";
-    defineProps<{userInfoes: {
-            name: string;
-            age: number;
-            desc?: string;
-        }[] }>()
+import { defineProps } from 'vue'
+import ListItem from './ListItem.vue'
+defineProps<{
+    userInfoes: {
+        name: string;
+        age: number;
+        desc: string;
+    }[]
+}>()
 </script>
 
 
