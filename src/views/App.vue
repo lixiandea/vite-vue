@@ -1,12 +1,8 @@
 <script setup lang="ts">
-import HelloWorld from '../components/HelloWorld.vue';
-import UserList from '../components/UserList.vue';
-var userInfoes = [{ name: "a", age: 10, desc: "testdesc" }]
 </script>
 
 <template>
-  <HelloWorld msg="Vite + Vue" />
-  <UserList :userInfoes="userInfoes" />
+  <RouterView></RouterView>
 </template>
 
 <style scoped>
